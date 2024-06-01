@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Completion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+            width: 100% !important;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header img {
+            max-width: 100px;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .content p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://th.bing.com/th/id/OIP.sc6M4crapELc0sxi1nrN0wHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Quiz Application Logo">
+        </div>
+        <div class="content">
+            <h1>Congratulations, {{name}}!</h1>
+            <p>Dear {{name}},</p>
+            <p>Congratulations on completing the quiz! We appreciate your participation. Keep up the good work!</p>
+            <p>Best regards,</p>
+            <p>The Quiz Application Team</p>
+        </div>
+        <div class="footer">
+            <p>If you have any questions or concerns, feel free to contact us.</p>
+            <p>&copy; 2024 Quiz Application. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
