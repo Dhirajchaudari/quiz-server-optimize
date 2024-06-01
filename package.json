@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
+    "build": "npm install && npm run build:typescript",
+    "build:typescript": "rimraf dist && tsc && cpx \"./src/**/*.hbs\" \"./dist/emails/\" && cpx \"./src/config/**/*.ts\" \"./dist/config/\" && cpx \"./src/controllers/**/*.ts\" \"./dist/controllers/\" && cpx \"./src/models/**/*.ts\" \"./dist/models/\" && cpx \"./src/nodemailer/**/*.ts\" \"./dist/nodemailer/\" && cpx \"./src/routes/**/*.ts\" \"./dist/routes/\" && cpx \"./src/helpers/**/*.ts\" \"./dist/helpers/\" && cpx \"./src/interfaces/**/*.ts\" \"./dist/interfaces/\" && cpx \"./src/utils/**/*.ts\" \"./dist/utils/\"",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\""
   },

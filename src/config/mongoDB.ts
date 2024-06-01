@@ -1,4 +1,4 @@
-import {mongoose} from '@typegoose/typegoose'
+import mongoose from "mongoose";
 
 export async function connectToDB() {
     try {
